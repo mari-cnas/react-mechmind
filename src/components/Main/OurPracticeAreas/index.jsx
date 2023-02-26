@@ -5,7 +5,7 @@ import balance from '../../../assets/006-balance.png';
 import auction from '../../../assets/001-auction.png';
 import accept from '../../../assets/005-accept.png';
 
-import { AdviceContainer } from './style';
+
 import CardPracticeAdvice from  '../../CardPracticeAdvice';
 import card1 from '../../../assets/card1.png';
 import card2 from '../../../assets/card2.png';

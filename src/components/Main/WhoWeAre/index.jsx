@@ -1,34 +1,27 @@
-import Video from  '../../Video';
 import Maintext from  '../../Maintext';
-import people from '../../../assets/Pessoas.png';
-import velo from '../../../assets/Velocímetro.png';
-
+import cost from '../../../assets/costbg.png';
+import logo from '../../../assets/logopng.png';
+import { Col, Row } from 'react-bootstrap';
 
 const WhoWeAre = () => (
-    <div className="container my-5" id="who-we-are">
+    <div className="container mb-5" id="who-we-are">
         <Maintext
-            title="Who We Are"
-            description1="Problems trying to resolve the conflict between the two major realms"
-            description2="of Classical physics: Newtonian mechanics"
+            title="Sobre nós"
             align="center"        
         />
-        <div className="row align-items-end justify-content-between ">
-            <div className="col-12 col-lg-7 col-md-12">
-                <Video/>
-            </div>
-            <div className="col-12 col-lg-5 col-md-12 d-flex flex-column align-items-lg-end align-items-sm-center ">
-                <Maintext
-                    title="Most trusted in"
-                    title2="our field"
-                    description1="Most calendars are designed for teams. Slate"            
-                    description2="is designed for freelancers who want a"
-                    description3="imple way to plan their schedule."
-                    align="start"
-                />
-                <p className='text-white mb-2'><img src={people} alt="card1" className="me-4"/>the quick fox jumps over the lazy dog<br/>Things on a very small scale...</p>
-                <p className='text-white mb-0'><img src={velo} alt="card1" className="me-4 "/>the quick fox jumps over the lazy dog<br/>Things on a very small scale...</p>
-            </div>
-        </div>
+        <Row className="align-items-center about-bg">
+            <Col className="col-3 d-flex ">
+            <img src={logo} alt="card1" className="my-2" />          
+            </Col>
+            <Col className="col-6">
+                <p className="fw-bold text-center">
+                A MechMind é uma empresa especializada em engenharia mecânica que oferece soluções através de laudos, avaliações e perícias. Com uma equipe altamente capacitada, a empresa é capaz de oferecer aos seus clientes soluções personalizadas que atendem às suas necessidades específicas com o melhor custo-benefício do mercado.
+                </p>
+            </Col>
+            <Col className="col-3">
+                <img src={cost} alt="card1" className="my-2 " />
+            </Col>
+        </Row>
     </div>  
 );
 

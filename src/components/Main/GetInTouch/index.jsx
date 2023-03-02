@@ -1,35 +1,28 @@
 import { GetInTouchContainer } from './style';
 import Maintext from  '../../Maintext';
 import CardContact from  '../../CardContact';
-import tel from '../../../assets/tel.png';
-import send from '../../../assets/send.png';
-import map from '../../../assets/map.png';
+import { BiPhone } from 'react-icons/bi';
+import { AiOutlineMail } from 'react-icons/ai';
 
 const GetInTouch = () => (
     <GetInTouchContainer className="container d-flex flex-column my-5" id="contact">
         <Maintext
-        title="Get In Touch"
-        description1="Problems trying to resolve the conflict between"
-        description2="the two major realms of Classical physics: Newtonian mechanics"
+        title="Contato"
         align="center"
         />
-        <div className=" row h-75 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <div className=" row h-75 row-cols-md-2 row-cols-sm-1">
             <CardContact className="col"
-            title="georgia.young@example.com"
+            title="Telefone"
             description="georgia.young@ple.com"
-            icon={tel}
+            icon={<BiPhone size={50}/>}
+            
             />       
             <CardContact className="col tw"
-            title="georgia.young@example.com"
+            title="E-mail"
             description="georgia.young@ple.com"
-            icon={map}
+            icon={<AiOutlineMail size={50}/>}
             backgroundColor="#295C7A"
             textColor="white"
-            />
-            <CardContact className="col"
-            title="georgia.young@example.com"
-            description="georgia.young@ple.com"
-            icon={send}
             />
         </div>
     </GetInTouchContainer>

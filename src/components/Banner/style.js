@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import cover from '../../assets/cover.png';
+import cover from '../../assets/cover.jpg';
 
 
 const fadeIn = keyframes`
@@ -36,14 +36,14 @@ const leave = keyframes`
 `     
 
 
-export const HeaderContainer = styled.section`
+export const NavSection = styled.header`
 
 
-header{
+/* header{
     position: fixed;
     top:10px;
     left: 20px;
-}
+} */
 
 /* .navbody{
     background: #252B42;
@@ -110,14 +110,26 @@ p,a{
 
 `;
 
-export const BannerContainer = styled.section`
+export const HeaderBg = styled.section`
+display:flex;
+flex-direction: column;
+min-height:100vh;
+`
+
+export const BannerSection = styled.section`
 
 background-image: url(${cover});
 background-repeat: no-repeat;
 background-size: cover;
+
+div{
+    backdrop-filter: blur(10px);
+}
 `
 
-export const NavSection = styled.div`
+
+
+export const GeneralMenu = styled.div`
 
     display: block;
     color: #666;

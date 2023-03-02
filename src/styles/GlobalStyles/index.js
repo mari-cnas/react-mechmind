@@ -3,18 +3,14 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
 
 :root{
-        --color-1:#5bb4f3 ;
-        --color-2 : #a4dcfc ;
-        --color-3: #44799c ;
-        --color-4: #5484ac ;
-        --color-5: #c7dce4 ;
-        --color-6: #1f1f20 ;
-        --color-7: #2b4c7e ;
-        --color-8: #567ebb ;
-        --color-9: #606d80 ;
-        --color-10: #dce0e6;
-
-    }
+        --color-1: #5CB1F2;
+        --color-2: #1c75bc ;
+        --color-3: #4ACFEF ;
+        --color-4: #737373 ;
+        --color-5: #D9D9D9 ;
+        --color-6: #252B42 ;
+        --color-7: #74cae8 ;
+     }
 
 * {
     margin:0;
@@ -26,18 +22,15 @@ html,body,#root{
     min-height: 100vh;
 }
 
-
 body {
-    background: #252B42;
-    .text-blue { color: var(--color-1);} 
-    .header-bg { color: var(--color-7);} 
-
-    
+    .main-bg {background: var(--color-6);}
+    .header-bg { background: var(--color-6);} 
+    .footer-bg { background: var(--color-4);} 
+    .text-blue { color: var(--color-2);} 
+    .title-color {color: var(--color-1);}
+    .about-bg {background: white;}
 }
 
-
-   
-    
 
 h2{
     color:white;
@@ -70,13 +63,13 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #D0A144;
+  color: var(--color-3);
   text-shadow: 1px 1px 2px black;
 }
 
 /* selected link */
 a:active {
-  color: #D0A144;
+  color: var(--color-3);
 
 }
 

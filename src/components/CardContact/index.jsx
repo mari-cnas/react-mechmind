@@ -1,4 +1,3 @@
-import { IconBase } from 'react-icons';
 import { ContactCardContainer } from './style';
 
 const CardContact = ({icon,title,description,backgroundColor,textColor, children}) => (

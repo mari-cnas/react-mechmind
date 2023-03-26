@@ -1,4 +1,4 @@
-import {   BannerSection, GeneralMenu, HeaderBg,  MenuMobile, MenuOverlay, NavSection} from './style';
+import {   BannerSection, GeneralMenu, HeaderBg,  MenuMobile, MenuOverlay, MenuSection, NavSection} from './style';
 import logo from '../../assets/logopng.png';
 import {AiOutlineClose } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -22,17 +22,16 @@ const Banner = () => {
                                     <GiHamburgerMenu type="button" onClick={() => setIsMenuOpened(true)} size={18} color="white"/>
                                 </div>                                          
                                 <MenuMobile isMenuOpened={isMenuOpened} className="d-flex flex-column d-md-none position-fixed">
-                                    <NavSection className="container w-100">
-                                        <div className=" d-flex flex-column justify-content-center mb-3">
-                                            <AiOutlineClose type="button" onClick={() => setIsMenuOpened(false)} className="align-self-end" />
-                                
-                                        </div>
-                                    <div className="d-flex flex-column w-100">
-                                    <p id="logo">MechMind</p>    
-                                            <a href="#practice-areas" className="me-4" isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)}>Serviços</a>
-                                            <a href="#who-we-are" className="me-4" isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)}>Sobre nós</a>
-                                            <a href="#contact" className="me-4" isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)}>Contato</a>
-                                        </div>
+                                    <NavSection className="container w-100 ">
+                                        <MenuSection className=" d-flex flex-column text-white ">
+                                            <AiOutlineClose type="button" onClick={() => setIsMenuOpened(false)} className="align-self-end mt-3" />
+                                            <div className=" d-flex flex-column flex-grow-1 justify-content-between">
+                                            <p id="logo" >MechMind</p>    
+                                            <a href="#practice-areas" isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)}>Serviços</a>
+                                            <a href="#who-we-are" isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)}>Sobre nós</a>
+                                                <a href="#contact" className="mb-5" isMenuOpened={isMenuOpened} onClick={() => setIsMenuOpened(false)}>Contato</a>
+                                                </div>
+                                        </MenuSection>
                                     </NavSection>
                                 </MenuMobile>
                                 <GeneralMenu className="w-100 d-none d-md-flex">
@@ -48,13 +47,10 @@ const Banner = () => {
                 </div>
             </NavSection>
             <BannerSection className="d-flex flex-grow-1 justify-content-end ">
-                <div className="col-6 d-flex align-items-center">
-                    <Container className="d-flex flex-column ">
-                        <h1 className="text-blue fw-bold">MechMind</h1>
-                        <p className="my-0 fw-bold">A MechMind é uma empresa especializada em engenharia mecânica </p>
-                        <p className="my-0 fw-bold">que oferece soluções através de laudos, avaliações e perícias.</p>
+                    <Container className="d-flex flex-column align-items-center justify-content-center justify-content-md-start">
+                        <h1 className=" fw-bold mt-lg-3">MECHMIND</h1>
+                        <p className="my-0 fw-bold text-center">A MechMind é uma empresa especializada em engenharia mecânica que oferece soluções através de laudos, avaliações e perícias.</p>
                     </Container>
-                </div>
             </BannerSection>
         </HeaderBg>
     );

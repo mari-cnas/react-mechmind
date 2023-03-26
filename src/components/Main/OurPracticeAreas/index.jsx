@@ -3,7 +3,7 @@ import Maintext from  '../../Maintext';
 import CardPracticeAreas from  '../../CardPracticeAreas';
 import nr12 from '../../../assets/nr12bg.png';
 import pmoc from '../../../assets/pmocbg.png';
-import cost from '../../../assets/costbg.png';
+//import cost from '../../../assets/costbg.png';
 import services from '../../../assets/servicesbg.png';
 
 
@@ -14,42 +14,42 @@ const OurPracticeAreas = () => (
             title="Serviços - Áreas de atuação"
             align="center"
         />
-        <div className="row row-cols-1 row-cols-md-4 w-100 justify-content-between g-5">
+        <div className="row row-cols-1 row-cols-md-3 w-100 justify-content-between g-2 g-lg-4">
             <div className="col d-flex ">
             <CardPracticeAreas 
             title="NR12"
             icon={nr12}
-            description="Laudo NR12 para Máquinas e Equipamentos
-            Inventário NR12 para Máquinas e Equipamentos
-            Apreciação de Riscos e laudo NR12
-            Adequação Máquinas NR12"
+            description1="Laudo NR12 para Máquinas e Equipamentos"
+            description2="Inventário NR12 para Máquinas e Equipamentos"
+            description3="Apreciação de Riscos e laudo NR12"
+            description4="Adequação Máquinas NR12"
                     /></div>
             <div className="col d-flex ">
             <CardPracticeAreas 
             title="PMOC"
             icon={pmoc}
-            description="Laudo NR12 para Máquinas e Equipamentos
-            Inventário NR12 para Máquinas e Equipamentos
-            Apreciação de Riscos e laudo NR12
-            Adequação Máquinas NR12"
+            description1="Laudo NR12 para Máquinas e Equipamentos"
+            description2="Inventário NR12 para Máquinas e Equipamentos"
+            description3="Apreciação de Riscos e laudo NR12"
+            description4="Adequação Máquinas NR12"
                     /></div>
-                <div className="col d-flex ">
+                {/* <div className="col d-flex ">
             <CardPracticeAreas 
             title="AVCB e PPCI"
             icon={cost}
-            description="Laudo NR12 para Máquinas e Equipamentos
-            Inventário NR12 para Máquinas e Equipamentos
-            Apreciação de Riscos e laudo NR12
-            Adequação Máquinas NR12"
-            /></div>
+            description1="Laudo NR12 para Máquinas e Equipamentos"
+            description2="Inventário NR12 para Máquinas e Equipamentos"
+            description3="Apreciação de Riscos e laudo NR12"
+            description4="Adequação Máquinas NR12"
+            /></div> */}
 		     <div className="col d-flex ">
             <CardPracticeAreas 
             title="Laudos"
             icon={services}
-            description="Laudos + ART;
-            Perícias;
-            Consultorias; 
-            Projetos e Melhorias."
+            description1="Laudos + ART"
+            description2="Perícias"
+            description3="Consultorias"
+            description4="Projetos e Melhorias"
                     /></div>
                 
         </div>    

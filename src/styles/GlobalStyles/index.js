@@ -10,6 +10,7 @@ export default createGlobalStyle`
         --color-5: #D9D9D9 ;
         --color-6: #252B42 ;
         --color-7: #74cae8 ;
+        --color-8: #474a51 ;
      }
 
 * {
@@ -25,7 +26,7 @@ html,body,#root{
 body {
     .main-bg {background: var(--color-6);}
     .header-bg { background: var(--color-6);} 
-    .footer-bg { background: var(--color-4);} 
+    .footer-bg { background: var(--color-8);} 
     .text-blue { color: var(--color-2);} 
     .title-color {color: var(--color-1);}
     .about-bg {background: white;}

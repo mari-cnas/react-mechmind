@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import cover from '../../assets/cover.jpg';
-
+import coversm from '../../assets/coversm.jpg';
 
 const fadeIn = keyframes`
     from{
@@ -38,45 +38,6 @@ const leave = keyframes`
 
 export const NavSection = styled.header`
 
-
-/* header{
-    position: fixed;
-    top:10px;
-    left: 20px;
-} */
-
-/* .navbody{
-    background: #252B42;
-    opacity:50%;
-}
-
-.navcolor{
-    background: #252B42;
-
-} */
-
-.btn1{
-    padding: 10px 36px;
-    width: 182px;
-    height: 48px; 
-    background: #D0A144;
-    border-radius: 37px;
-    border-style: none;
-    color: white;
-    font-size: 14px;
-}
-
-.btn2{
-    padding: 10px 36px;
-    width: 182px;
-    height: 48px;
-    background: none;
-    border-radius: 37px;
-    border-color: white;
-    color: white;
-    font-size: 14px;
-}
-
 .navbar{
     color:white;
 }
@@ -110,6 +71,9 @@ p,a{
 
 `;
 
+export const MenuSection = styled.div`
+    height:100vh;
+`
 export const HeaderBg = styled.section`
 display:flex;
 flex-direction: column;
@@ -118,16 +82,21 @@ min-height:100vh;
 
 export const BannerSection = styled.section`
 
-background-image: url(${cover});
+background-image: url(${coversm});
 background-repeat: no-repeat;
 background-size: cover;
 
-div{
-    backdrop-filter: blur(10px);
+@media (min-width: 767px) { background-image: url(${cover}); }
+
+h1{
+    font-size:3rem;
+}
+p{
+    max-width:700px;
+    font-size:1.2rem;
+    color:black;
 }
 `
-
-
 
 export const GeneralMenu = styled.div`
 
@@ -140,7 +109,7 @@ export const MenuMobile = styled.div`
 
     height: 100rem;
     top:0;
-    left: ${props => props.isMenuOpened ? 0 : -75}%;
+    right: ${props => props.isMenuOpened ? 0 : -75}%;
     padding: 0px;
     width: 75%;
     animation: ${props => props.isMenuOpened ? enter : leave} 0.2s ease-out;
@@ -161,5 +130,6 @@ export const MenuOverlay = styled.div`
     transition: all 0.2s ease-out;
     z-index: 5;
     top:0;
+    left:0;
     height:100vh;
 `

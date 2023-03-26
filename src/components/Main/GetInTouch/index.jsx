@@ -13,13 +13,13 @@ const GetInTouch = () => (
         <div className=" row h-75 row-cols-md-2 row-cols-sm-1">
             <CardContact className="col"
             title="Telefone"
-            description="georgia.young@ple.com"
+            description="(41)99978-3212/99575-5306"
             icon={<BiPhone size={50}/>}
             
             />       
             <CardContact className="col tw"
             title="E-mail"
-            description="georgia.young@ple.com"
+            description="contato.mechmind@gmail.com"
             icon={<AiOutlineMail size={50}/>}
             backgroundColor="#295C7A"
             textColor="white"

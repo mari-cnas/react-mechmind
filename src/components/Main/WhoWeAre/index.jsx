@@ -9,16 +9,16 @@ const WhoWeAre = () => (
             title="Sobre nós"
             align="center"        
         />
-        <Row className="align-items-center about-bg">
-            <Col className="col-3 d-flex ">
+        <Row className="align-items-center about-bg flex-column flex-lg-row">
+            <Col className="col-3 d-flex justify-content-center">
             <img src={logo} alt="card1" className="my-2" />          
             </Col>
-            <Col className="col-6">
+            <Col className="col-12 col-lg-6">
                 <p className="fw-bold text-center">
                 A MechMind é uma empresa especializada em engenharia mecânica que oferece soluções através de laudos, avaliações e perícias. Com uma equipe altamente capacitada, a empresa é capaz de oferecer aos seus clientes soluções personalizadas que atendem às suas necessidades específicas com o melhor custo-benefício do mercado.
                 </p>
             </Col>
-            <Col className="col-3">
+            <Col className="col-3 d-flex justify-content-center">
                 <img src={cost} alt="card1" className="my-2 " />
             </Col>
         </Row>

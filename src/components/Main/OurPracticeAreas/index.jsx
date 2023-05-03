@@ -28,10 +28,10 @@ const OurPracticeAreas = () => (
             <CardPracticeAreas 
             title="PMOC"
             icon={pmoc}
-            description1="Laudo NR12 para Máquinas e Equipamentos"
-            description2="Inventário NR12 para Máquinas e Equipamentos"
-            description3="Apreciação de Riscos e laudo NR12"
-            description4="Adequação Máquinas NR12"
+            description1="Laudo técnico para Sistemas de Ar condicionado"
+            description2="PMOC (Plano de Manutenção, Operação e Controle)"
+            description3="Definição da frequência das atividades de manutenção"
+            description4="Lista de verificação para inspeção das condições de funcionamento"
                     /></div>
                 {/* <div className="col d-flex ">
             <CardPracticeAreas 

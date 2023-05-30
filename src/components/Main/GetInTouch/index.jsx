@@ -13,7 +13,7 @@ const GetInTouch = () => (
         <div className=" row h-75 row-cols-md-2 row-cols-sm-1">
             <CardContact className="col"
             title="Telefone"
-            description="(41)99978-3212/99575-5306"
+            description="(41)99978-3212"
             icon={<BiPhone size={50}/>}
             
             />       
